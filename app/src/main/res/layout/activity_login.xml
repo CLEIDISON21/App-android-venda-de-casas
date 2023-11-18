@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_prototipocasas"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        tools:context=".LoginActivity">
+
+        <ImageView
+            android:id="@+id/Logocasa"
+            android:layout_width="363dp"
+            android:layout_height="233dp"
+            android:layout_marginTop="16dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/images"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/containerComponents"
+            style="@style/ContainerComponents"
+            android:layout_width="324dp"
+            android:layout_height="273dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.467"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Logocasa" />
+
+        <EditText
+            android:id="@+id/Edit_email"
+            style="@style/Edit_Text"
+            android:layout_width="280dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@drawable/icon_email"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/containerComponents"
+            app:layout_constraintHorizontal_bias="0.574"
+            app:layout_constraintStart_toStartOf="@id/containerComponents"
+            app:layout_constraintTop_toTopOf="@id/containerComponents" />
+
+        <EditText
+            android:id="@+id/Edit_senha"
+            style="@style/Edit_Text_senha"
+            android:layout_width="278dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:hint="Senha"
+            android:inputType="numberPassword"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/containerComponents"
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintStart_toStartOf="@id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@id/Edit_email" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_entrar"
+            style="@style/buttom"
+            android:layout_width="272dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:onClick="login"
+            android:padding="10dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/containerComponents"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="@id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@id/Edit_senha" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:indeterminateTint="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerComponents" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCadstro"
+            style="@style/btn_cadastro"
+            android:layout_width="284dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:onClick="cadastrar"
+            android:padding="10dp"
+            android:text="Cadastrar"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progress" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEsqueceuSenha"
+            style="@style/btn_cadastro"
+            android:layout_width="284dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:onClick="cadastrar"
+            android:padding="10dp"
+            android:text="Esqueceu a senha"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/btnCadstro" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+
+

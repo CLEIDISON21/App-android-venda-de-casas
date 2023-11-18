@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "451656441611",
+    "project_id": "venda-de-casas",
+    "storage_bucket": "venda-de-casas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451656441611:android:a5f66112c543e778478c0e",
+        "android_client_info": {
+          "package_name": "com.example.prototipovendadecasas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnQVxx9lkQ9T4dFVVnc8HWvmo1aasG78Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

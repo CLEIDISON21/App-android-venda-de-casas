@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_prototipocasas"
+    tools:context=".AnuncioActivity">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:src="@drawable/casahome" />
+
+    <TextView
+        android:id="@+id/textAnuncio"
+        android:layout_width="407dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:paddingTop="10dp"
+        android:text="CASAS NOVAS !"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/image1"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="413dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:paddingTop="10dp"
+        android:text="02 QUARTOS"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textAnuncio"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="407dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:paddingTop="10dp"
+        android:text="01 VAGA"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="409dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:text="FALE COM NOSSOS CORRETORES"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="407dp"
+        android:layout_height="47dp"
+        android:padding="15dp"
+        android:text="CONTATO (085)3254-6987"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <Button
+        android:id="@+id/btn_proximo"
+        android:layout_width="284dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/white"
+        android:text="proximo"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text4" />
+
+    <Button
+        android:id="@+id/btn_voltar_login"
+        android:layout_width="284dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/white"
+        android:text="Voltar para o Login"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_proximo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
